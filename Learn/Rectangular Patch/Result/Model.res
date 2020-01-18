@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:102
+size=i:103
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -1002,4 +1002,18 @@ lifetime=s:persistent
 result=s:1
 treepath=s:1D Results\Materials\Nickel\Surface Impedance\Z'' (Theory)
 files=s:Nickel_Z_datalist_im.sig
+
+type=s:FARFIELDPOLAR
+subtype=s:farfield polar linear
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:solverstart
+result=s:0
+treepath=s:Farfields\farfield (f=1.8) [1]\farfield (f=1.8) [1]
+files=s:farfield (f=1.8) [1].sig
+files=s:FarfieldBkGround.bmp
+xlabel=s:Theta / Degree
+ylabel=s:dBi
+title=s:Farfield Directivity Abs (Phi=90)
 

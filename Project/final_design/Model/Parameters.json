@@ -1,4 +1,30 @@
 {
-    "parameters": null,
+    "parameters": [
+        {
+            "expr": "50",
+            "name": "Ls",
+            "value": "50"
+        },
+        {
+            "expr": "50",
+            "name": "Ws",
+            "value": "50"
+        },
+        {
+            "expr": "1.5",
+            "name": "Hs",
+            "value": "1.5"
+        },
+        {
+            "expr": "1.729337039",
+            "name": "r",
+            "value": "1.729337039"
+        },
+        {
+            "expr": "0.035",
+            "name": "Tc",
+            "value": "0.035"
+        }
+    ],
     "version": 1
 }

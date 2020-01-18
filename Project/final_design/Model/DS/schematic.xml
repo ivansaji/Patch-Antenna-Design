@@ -3,7 +3,7 @@
     <BasePath>D:/Project Files/Github/Patch Antenna Design/Project/final_design/Model/DS</BasePath>
     <Block ForeignId="415651194" Id="1" Class="MWSSCHEM">
         <Size Height="150" Width="150"/>
-        <Image Scale="AutoFit" FileName="D:\Project Files\Github\Patch Antenna Design\Project\final_design\Model\3D\Model.dib"/>
+        <Image Scale="AutoFit" FileName="../3D/Model.dib"/>
         <Pos X="75" Y="75"/>
         <ToolTip>CST MICROWAVE STUDIO schematic block MWSSCHEM1</ToolTip>
     </Block>
