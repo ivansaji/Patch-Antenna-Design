@@ -1,0 +1,45 @@
+data_id
+
+!solution_id  17-January-2020  15:51:53
+parameters
+  variable Mt
+    value 0.100000E+00
+  variable h
+    value 0.450000E+01
+  variable Gpf
+    value 0.100000E+01
+  variable Fi
+    value 0.125000E+02
+  variable Wf
+    value 0.870000E+01
+  variable Lf
+    value 0.315000E+02
+  variable W
+    value 0.510000E+02
+  variable L
+    value 0.380000E+02
+
+frequency  1.800000E+09
+  loss integral (W)
+    component1:substrate   1.855720E-01
+    component1:ground_plane   1.182395E-03
+    port shield   3.328102E-03
+    component1:patch   1.780032E-03
+    total  1.918625E-01
+  energy integral (J)
+    unnamed   1.472546E-10
+    component1:substrate   6.574174E-10
+    total  8.046719E-10
+  Q factor  4.743306E+01
+
+
+#This file gives total stored energy and material losses for various bodies.
+#Only those parts of a body within the defined output region contribute.
+#The energy and loss is not scaled for symmetry.
+#
+#Cavity:  Q factor = 2 pi freq stored_energy / power_loss
+#
+#Antenna: Gain(db) = Directivity(dB) + 10 log10(p_rad /(p_rad + p_loss))
+#
+#  NB: p_rad given by Far Field Plot includes images due to symmetry boundaries
+#      p_loss given here is for work_space only - multiply by 2^Nsymmetry_bound

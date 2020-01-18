@@ -1,0 +1,36 @@
+data_id
+
+!solution_id  17-January-2020  15:51:53
+
+function radiated power
+  parameters
+    variable Mt
+      value  0.100000E+00
+    variable h
+      value  0.450000E+01
+    variable Gpf
+      value  0.100000E+01
+    variable Fi
+      value  0.125000E+02
+    variable Wf
+      value  0.870000E+01
+    variable Lf
+      value  0.315000E+02
+    variable W
+      value  0.510000E+02
+    variable L
+      value  0.380000E+02
+    excitation_label 1
+  from frequency
+    type real
+    units Hz
+  to radiated power
+    type real
+    units W
+    parameters
+      dB 10
+  table
+{
+table_as_binary            1(   2r/)
+NÖ“¤>fB,
+}

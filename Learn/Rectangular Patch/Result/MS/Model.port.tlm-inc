@@ -1,0 +1,5 @@
+(define) port_excitation 1
+  !delay 0.00000 
+  !power_wave_amplitude 1.00000 
+  !job 1
+

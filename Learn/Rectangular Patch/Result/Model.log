@@ -1,0 +1,104 @@
+
+                      ------------------------------------------------------------------------------
+17/Jan/2020 15:51:50  (Discretizer) : Reading solids
+17/Jan/2020 15:51:50  (Discretizer) : Model.material.tlm-inc read ok
+17/Jan/2020 15:51:50  (Discretizer) : Writing solids
+17/Jan/2020 15:51:50  (Discretizer) : Writing "component1:ground_plane" (1 of 3)
+17/Jan/2020 15:51:50  (Discretizer) : Examining "component1:ground_plane" for lumping (1 of 3)
+17/Jan/2020 15:51:50  (Discretizer) : Writing "component1:patch" (2 of 3)
+17/Jan/2020 15:51:50  (Discretizer) : Examining "component1:patch" for lumping (2 of 3)
+17/Jan/2020 15:51:50  (Discretizer) : Writing "component1:substrate" (3 of 3)
+17/Jan/2020 15:51:50  (Discretizer) : Examining "component1:substrate" for lumping (3 of 3)
+17/Jan/2020 15:51:50  (Discretizer) : Writing ports (not using ACIS)
+17/Jan/2020 15:51:50  (Discretizer) : Port 1: Attempting to create some initial fluxes
+17/Jan/2020 15:51:50  (Discretizer) : Writing outputs
+17/Jan/2020 15:51:50  (Discretizer) : Automatic lumping of cells
+17/Jan/2020 15:51:50  (Discretizer) : Done: 47,488 living cells after lumping (61.8% reduction).
+17/Jan/2020 15:51:51  (Discretizer) : Total time taken: 1 sec
+
+                      ------------------------------------------------------------------------------
+17/Jan/2020 15:51:52  (TLM Solver) : C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model.tlm 
+17/Jan/2020 15:51:52  (TLM Solver) : Checking the TLM data... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding living cells... 
+17/Jan/2020 15:51:52  (TLM Solver) : Found 90218 living cells 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding pointers to living cells... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding dimensions of living cells... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding material type of living cells... 
+17/Jan/2020 15:51:52  (TLM Solver) : Checking structure locations... 
+17/Jan/2020 15:51:52  (TLM Solver) : Checking external connections... 
+17/Jan/2020 15:51:52  (TLM Solver) : Adjusting pointers to cells for thin medium... 
+17/Jan/2020 15:51:52  (TLM Solver) : Setting pointers to cells for thin metal... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding lumped_cells connects... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding metal connects... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding external_boundaries connects... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding cells for external connections... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding medium connects... 
+17/Jan/2020 15:51:52  (TLM Solver) : Warping pba cells... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding cells in ports... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding field singularity edges 
+17/Jan/2020 15:51:52  (TLM Solver) : Calculating time step... 
+17/Jan/2020 15:51:52  (TLM Solver) : PBA cell count as a fraction of total 2.4633912E-02 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding field monitors... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding excitation cells... 
+17/Jan/2020 15:51:52  (TLM Solver) : Checking external_boundaries... 
+17/Jan/2020 15:51:52  (TLM Solver) : Calculating maximum frequency... 
+17/Jan/2020 15:51:52  (TLM Solver) : Checking ports... 
+17/Jan/2020 15:51:52  (TLM Solver) : Finding wires... 
+17/Jan/2020 15:51:52  (TLM Solver) : Counting wire nodes 
+17/Jan/2020 15:51:52  (TLM Solver) : 0 cells contain wires 
+17/Jan/2020 15:51:52  (TLM Solver) : Creating wire nodes 
+17/Jan/2020 15:51:52  (TLM Solver) : 0 x-chains, 0 y-chains, 0 z-chains 
+17/Jan/2020 15:51:52  (TLM Solver) : 0 multiwire connects 
+17/Jan/2020 15:51:52  (TLM Solver) : 0 multiwire to circuit connects 
+17/Jan/2020 15:51:52  (TLM Solver) : 0 multiwire terminations 
+17/Jan/2020 15:51:52  (TLM Solver) : Filtering excitation to 1.9GHz 
+17/Jan/2020 15:51:53  (TLM Solver) : Mesh has been updated 
+17/Jan/2020 15:51:53  (TLM Solver) : Timestep: 4.9390770E-13 s 
+17/Jan/2020 15:51:53  (TLM Solver) : Maximum model frequency: 1.9GHz 
+17/Jan/2020 15:51:53  (TLM Solver) : Number of time steps: 1446018 
+17/Jan/2020 15:51:53  (TLM Solver) : Number of samples: 5437 
+17/Jan/2020 15:51:53  (TLM Solver) : Number of cells: 90218 
+17/Jan/2020 15:51:53  (TLM Solver) : Memory allocated: 68.578Mbytes 
+17/Jan/2020 15:51:53  (TLM Solver) : Writing material properties file... 
+17/Jan/2020 15:51:53  (TLM Solver) : Calculating runtime scatter parameters... 
+17/Jan/2020 15:51:53  (TLM Solver) : Simulation started 17-January-2020 15:51:53 
+17/Jan/2020 15:51:53  (TLM Solver) : All data checking is done. Starting the simulation 
+17/Jan/2020 15:51:53  (TLM Solver) : Running parallel solver using 4 threads on 4 logical processors (1 socket) 
+17/Jan/2020 15:51:53  (TLM Solver) : Calculating mode frequency with 18803 time steps... 
+17/Jan/2020 15:51:55  (TLM Solver) : output saved for pre-simulation 
+17/Jan/2020 15:51:55  (TLM Solver) : Calculating mode profile with 18803 time steps... 
+17/Jan/2020 15:51:58  (TLM Solver) : output saved for pre-simulation 
+17/Jan/2020 15:51:58  (TLM Solver) : Presimulation run time: 5sec 
+17/Jan/2020 15:51:58  (TLM Solver) : Calculating full response with 1446018 time steps 
+17/Jan/2020 15:53:02  (TLM Solver) : All jobs finished 
+17/Jan/2020 15:53:02  (TLM Solver) : Writing output 
+17/Jan/2020 15:53:02  (TLM Solver) : Writing 3D results... 
+17/Jan/2020 15:53:03  (TLM Solver) : output saved 
+17/Jan/2020 15:53:03  (TLM Solver) : Simulation finished 17-January-2020 15:53:03 
+17/Jan/2020 15:53:03  (TLM Solver) : Run time: 1min 4sec 
+
+                      ------------------------------------------------------------------------------
+17/Jan/2020 15:53:03  (Fourier Transform) : INPUT "C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.td"
+17/Jan/2020 15:53:03  (Fourier Transform) : OPTIONS "-cmplx"
+17/Jan/2020 15:53:03  (Fourier Transform) : File: C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.td
+17/Jan/2020 15:53:03  (Fourier Transform) : Default: Frequencies: From: 1.7e+09 To: 1.9e+09
+17/Jan/2020 15:53:03  (Fourier Transform) : Done
+
+                      ------------------------------------------------------------------------------
+17/Jan/2020 15:53:04  (Waves Resolver) : INPUT "C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.td"
+17/Jan/2020 15:53:04  (Waves Resolver) : File: C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.td
+17/Jan/2020 15:53:04  (Waves Resolver) : Default: Frequencies: From: 1.7e+09 To: 1.9e+09
+17/Jan/2020 15:53:04  (Waves Resolver) : Ports: 1 port device
+17/Jan/2020 15:53:04  (Waves Resolver) : Done
+
+                      ------------------------------------------------------------------------------
+17/Jan/2020 15:53:04  (S Matrix) : INPUT "C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.td.io"
+17/Jan/2020 15:53:04  (S Matrix) : OPTIONS "-dB -s_matrix -Z_input -z_norm 50.000000"
+17/Jan/2020 15:53:04  (S Matrix) : File: C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.td.io
+17/Jan/2020 15:53:04  (S Matrix) : Ports: 1 port device
+17/Jan/2020 15:53:04  (S Matrix) : Done
+
+                      ------------------------------------------------------------------------------
+17/Jan/2020 15:53:05  (3D Field Processor) : INPUT "C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.*.sd"
+17/Jan/2020 15:53:05  (3D Field Processor) : File: C:\Users\Ivan Saji Abraham\AppData\Local\Temp\CSTDE1\Rectangular Patch\Result\MS\Model_results\Model.f001.sd
+17/Jan/2020 15:53:06  (3D Field Processor) : Done

@@ -1,0 +1,82 @@
+data_id
+
+!solution_id  17-January-2020  15:51:53
+function material loss
+  !parameters
+    variable Mt
+      value  0.100000E+00
+    variable h
+      value  0.450000E+01
+    variable Gpf
+      value  0.100000E+01
+    variable Fi
+      value  0.125000E+02
+    variable Wf
+      value  0.870000E+01
+    variable Lf
+      value  0.315000E+02
+    variable W
+      value  0.510000E+02
+    variable L
+      value  0.380000E+02
+    excitation_label 1
+
+  from frequency
+    type real
+    units Hz
+  to Dielectric Loss in solid component1:substrate
+    type real
+    units W
+    parameters
+      dB 10
+  to Metal Loss in solid component1:ground_plane
+    type real
+    units W
+    parameters
+      dB 10
+  to Metal Loss in solid port shield
+    type real
+    units W
+    parameters
+      dB 10
+  to Metal Loss in solid component1:patch
+    type real
+    units W
+    parameters
+      dB 10
+  to Dielectric Loss for FR-4 (lossy)
+    type real
+    units W
+    parameters
+      dB 10
+  to Metal Loss for Copper (annealed)
+    type real
+    units W
+    parameters
+      dB 10
+  to Metal Loss for port shield
+    type real
+    units W
+    parameters
+      dB 10
+  to total metal loss
+    type real
+    units W
+    parameters
+      dB 10
+  to total dielectric loss
+    type real
+    units W
+    parameters
+      dB 10
+  to total material loss
+    type real
+    units W
+    parameters
+      dB 10
+
+  table
+{
+table_as_binary            1(  11r/)
+NÖ“¤>>•:šú˜;ZI:éOó>>•;B%E;ZI;Î Ç>>•>Dw›
+}

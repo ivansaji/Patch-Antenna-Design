@@ -1,0 +1,191 @@
+*** File Version: 17.00
+
+Number of ports: 0
+Portnames:
+Modenumbers:
+Portlabels:
+StaticSources:
+ThermalSources:
+FloquetPortNames:
+FloquetPortModes:
+Terminals:
+TerminalToReferenceTable:
+StaticSourceGroups:
+ThermalSourceGroups:
+TerminalSourceGroups:
+PortSourceGroups:
+FloquetPortSourceGroups:
+Number of frequency-points: 0
+Fmin: 2.300000e+09
+Fmax: 2.600000e+09
+Fscale: 1.000000e+09
+
+
+
+
+
+*** newmonitor
+monname: "farfield (f=2.3)"
+nmonfrequencies: 1
+monfrequencies: "2.2999999999999998" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "farfield (f=2.45)"
+nmonfrequencies: 1
+monfrequencies: "2.4500000000000002" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "farfield (f=2.6)"
+nmonfrequencies: 1
+monfrequencies: "2.6000000000000001" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "e-field (f=2.45)"
+nmonfrequencies: 1
+monfrequencies: "2.4500000000000002" 
+montype: 0
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "loss (f=2.6)"
+nmonfrequencies: 1
+monfrequencies: "2.6000000000000001" 
+montype: 6
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "power (f=2.6)"
+nmonfrequencies: 1
+monfrequencies: "2.6000000000000001" 
+montype: 2
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "h-field (f=2.6)"
+nmonfrequencies: 1
+monfrequencies: "2.6000000000000001" 
+montype: 1
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "e-field (f=2.6)"
+nmonfrequencies: 1
+monfrequencies: "2.6000000000000001" 
+montype: 0
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "loss (f=2.45)"
+nmonfrequencies: 1
+monfrequencies: "2.4500000000000002" 
+montype: 6
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "power (f=2.45)"
+nmonfrequencies: 1
+monfrequencies: "2.4500000000000002" 
+montype: 2
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "h-field (f=2.45)"
+nmonfrequencies: 1
+monfrequencies: "2.4500000000000002" 
+montype: 1
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "loss (f=2.3)"
+nmonfrequencies: 1
+monfrequencies: "2.2999999999999998" 
+montype: 6
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "power (f=2.3)"
+nmonfrequencies: 1
+monfrequencies: "2.2999999999999998" 
+montype: 2
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "h-field (f=2.3)"
+nmonfrequencies: 1
+monfrequencies: "2.2999999999999998" 
+montype: 1
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "e-field (f=2.3)"
+nmonfrequencies: 1
+monfrequencies: "2.2999999999999998" 
+montype: 0
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
