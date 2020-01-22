@@ -176,7 +176,6 @@ ChangeSolverType("HF Time Domain")
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 WCS.ActivateWCS "local"
 
-
 '@ define material: FR-4 (lossy)
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
@@ -213,14 +212,12 @@ With Material
 .Wireframe "False"
 .Transparency "0"
 .Create
-End With 
-
+End With
 
 '@ new component: component1
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
-Component.New "component1" 
-
+Component.New "component1"
 
 '@ define cylinder: component1:solid1
 
@@ -238,20 +235,17 @@ With Cylinder
      .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With 
-
+End With
 
 '@ pick face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
-Pick.PickFaceFromId "component1:solid1", "1" 
-
+Pick.PickFaceFromId "component1:solid1", "1"
 
 '@ align wcs with face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 WCS.AlignWCSWithSelected "Face"
-
 
 '@ define material: Copper (annealed)
 
@@ -304,8 +298,7 @@ With Material
 .Transparentoutline "False"
 .Transparency "0"
 .Create
-End With 
-
+End With
 
 '@ define cylinder: component1:solid2
 
@@ -323,20 +316,17 @@ With Cylinder
      .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With 
-
+End With
 
 '@ pick face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
-Pick.PickFaceFromId "component1:solid1", "3" 
-
+Pick.PickFaceFromId "component1:solid1", "3"
 
 '@ align wcs with face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 WCS.AlignWCSWithSelected "Face"
-
 
 '@ define cylinder: component1:solid3
 
@@ -362,16 +352,92 @@ End With
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 Solid.Rename "component1:solid1", "fr4_substrate"
 
-
 '@ rename block: component1:solid2 to: component1:ground_plane
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 Solid.Rename "component1:solid2", "ground_plane"
 
-
 '@ rename block: component1:solid3 to: component1:circular_patch
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 Solid.Rename "component1:solid3", "circular_patch"
+
+'@ define material: FR-4 (lossy)
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Material 
+     .Reset 
+     .Name "FR-4 (lossy)"
+     .Folder ""
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.3"
+     .HeatCapacity "0"
+     .DynamicViscosity "0"
+     .Emissivity "0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "GHz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "s"
+     .Epsilon "4.4"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.025"
+     .TanDFreq "10.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .EnableUserConstTanDModelOrderEps "False"
+     .ConstTanDModelOrderEps "1"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .EnableUserConstTanDModelOrderMu "False"
+     .ConstTanDModelOrderMu "1"
+     .SetMagParametricConductivity "False"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "1st Order"
+     .DispersiveFittingSchemeMu "1st Order"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.94", "0.82", "0.76" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With 
+
+
+'@ define material colour: FR-4 (lossy)
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Material 
+     .Name "FR-4 (lossy)"
+     .Folder ""
+     .Colour "0.94", "0.82", "0.76" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeColour 
+End With 
 
 

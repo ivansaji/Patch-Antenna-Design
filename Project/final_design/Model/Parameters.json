@@ -1,26 +1,19 @@
 {
     "parameters": [
         {
-            "expr": "50",
-            "name": "Ls",
-            "value": "50"
-        },
-        {
-            "expr": "50",
-            "name": "Ws",
-            "value": "50"
-        },
-        {
-            "expr": "1.5",
+            "descr": "Height of Substrate",
+            "expr": "1.6",
             "name": "Hs",
-            "value": "1.5"
+            "value": "1.6"
         },
         {
-            "expr": "1.729337039",
+            "descr": "Radius of Patch",
+            "expr": "16.951495",
             "name": "r",
-            "value": "1.729337039"
+            "value": "16.951495"
         },
         {
+            "descr": "Thickness of Copper",
             "expr": "0.035",
             "name": "Tc",
             "value": "0.035"

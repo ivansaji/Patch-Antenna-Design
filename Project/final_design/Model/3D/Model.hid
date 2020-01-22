@@ -7,13 +7,10 @@
 2
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -29,9 +26,7 @@ WCS.ActivateWCS "global"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -62,9 +57,7 @@ Solid.Delete "component1:solid1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid2"
-
 [end]content
 [start]recover_picks
 1
@@ -86,24 +79,6 @@ Solid.Delete "component1:solid2"
 [end]recover_picks
 [start]delete_solids
 0
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
-12
-[end]block_index
-[start]command
-[end]command
-[start]content
-
-Solid.Delete "component1:solid3"
-
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-1
 [end]delete_solids
 [end]undo_item
 [end]history_fast_undo

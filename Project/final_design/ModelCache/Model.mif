@@ -3,9 +3,9 @@
 [PCB_BODIES: False]
 [PCB_IMPORT: False]
 [DISABLE_FAST_LOAD: False]
-[WCS: -6.7412529343622609e-17 0 1.5 0 0 1 1 0 0]
-[BBOX:-32.320404181857143 32.320404181857143 -32.320404181857143 32.320404181857143 -30.626067142857142 32.126067142857138]
-[BBOX_STRUCTURE:-1.729337039 1.729337039 -1.729337039 1.729337039 -0.035000000000000003 1.5350000000000001]
+[WCS: -6.6079840328093029e-16 0 1.6000000000000001 0 0 1 1 0 0]
+[BBOX:-47.542562142857143 47.542562142857143 -47.542562142857143 47.542562142857143 -30.626067142857142 32.22606714285714]
+[BBOX_STRUCTURE:-16.951495000000001 16.951495000000001 -16.951495000000001 16.951495000000001 -0.035000000000000003 1.6350000000000002]
 [UNITS]
      .Geometry "mm" 
      .Frequency "GHz" 
@@ -213,7 +213,7 @@ Solver.FrequencyRange "2.3", "2.6"
      .MaterialUnit "Frequency", "GHz"
      .MaterialUnit "Geometry", "mm"
      .MaterialUnit "Time", "s"
-     .Epsilon "4.3"
+     .Epsilon "4.4"
      .Mu "1.0"
      .Sigma "0.0"
      .TanD "0.025"
@@ -229,7 +229,7 @@ Solver.FrequencyRange "2.3", "2.6"
      .TanDM "0.0"
      .TanDMFreq "0.0"
      .TanDMGiven "False"
-     .TanDMModel "ConstSigma"
+     .TanDMModel "ConstTanD"
      .EnableUserConstTanDModelOrderMu "False"
      .ConstTanDModelOrderMu "1"
      .SetMagParametricConductivity "False"
