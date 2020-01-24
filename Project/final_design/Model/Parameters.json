@@ -17,6 +17,24 @@
             "expr": "0.035",
             "name": "Tc",
             "value": "0.035"
+        },
+        {
+            "descr": "Feed point Position on X axis",
+            "expr": "8.0813",
+            "name": "Xf",
+            "value": "8.0813"
+        },
+        {
+            "descr": "Radius of Substrate",
+            "expr": "4*r",
+            "name": "Rs",
+            "value": "67.80598"
+        },
+        {
+            "descr": "Feed point position op Y axis",
+            "expr": "r",
+            "name": "Yf",
+            "value": "16.951495"
         }
     ],
     "version": 1

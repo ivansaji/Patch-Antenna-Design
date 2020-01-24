@@ -344,8 +344,7 @@ With Cylinder
      .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With 
-
+End With
 
 '@ rename block: component1:solid1 to: component1:fr4_substrate
 
@@ -422,8 +421,7 @@ With Material
      .Transparentoutline "False" 
      .Transparency "0" 
      .Create
-End With 
-
+End With
 
 '@ define material colour: FR-4 (lossy)
 
@@ -439,5 +437,4 @@ With Material
      .Transparency "0" 
      .ChangeColour 
 End With 
-
 
