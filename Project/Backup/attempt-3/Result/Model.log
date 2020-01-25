@@ -1,0 +1,35 @@
+24/Jan/2020 18:52:09  Defined reference frequency for open boundary condition (2.45 GHz) is larger
+                      than the lowest relevant system frequency (monitor at 2.3 GHz).
+                      Please check open boundary settings to ensure accurate monitor results for the
+                      lowest frequency of interest.
+                      
+                      ------------------------------------------------------------------------------
+24/Jan/2020 18:52:09  *** Warning ***
+                      
+                      The monitor surface-current (f=2.45) is not supported and will be ignored.
+                      Please define an 'H-Field and Surface current monitor' instead.
+                      
+                      ------------------------------------------------------------------------------
+24/Jan/2020 18:52:11  Build version: 2019.0 Release from 2018-09-20 (change 633648)
+
+24/Jan/2020 18:52:11  Starting adaptive port meshing.
+                      
+                      ------------------------------------------------------------------------------
+24/Jan/2020 18:52:11  Mode calculation for port 1:
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+24/Jan/2020 18:52:14  *** Error ***
+                      
+24/Jan/2020 18:52:14  The calculation domain is completely filled with metal (PEC). Please check background material settings and layer 
+                      properties.
+                      
+                      ------------------------------------------------------------------------------
+24/Jan/2020 18:52:14  *** Error ***
+                      
+                      Adaptive port meshing failed.
+                      
+                      ------------------------------------------------------------------------------

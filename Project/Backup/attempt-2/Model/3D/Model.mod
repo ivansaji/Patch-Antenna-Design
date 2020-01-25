@@ -227,7 +227,7 @@ With Cylinder
      .Name "solid1" 
      .Component "component1" 
      .Material "FR-4 (lossy)" 
-     .OuterRadius "r" 
+     .OuterRadius "Rs" 
      .InnerRadius "0.0" 
      .Axis "z" 
      .Zrange "0", "Hs" 
@@ -475,23 +475,291 @@ WCS.MoveWCS "local", "Xf", "0.0", "0.0"
 '@ unpick face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
-Pick.UnpickFaceFromId "component1:circular_patch", "3" 
+Pick.UnpickFaceFromId "component1:circular_patch", "3"
 
 '@ pick face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
-Pick.PickFaceFromId "component1:ground_plane", "3" 
-
+Pick.PickFaceFromId "component1:ground_plane", "3"
 
 '@ align wcs with face
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
 WCS.AlignWCSWithSelected "Face"
 
+'@ move wcs
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.MoveWCS "local", "Xf", "0.0", "0.0"
+
+'@ define cylinder: component1:solid1
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .OuterRadius "1.25" 
+     .InnerRadius "0.0" 
+     .Axis "z" 
+     .Zrange "0", "-Tc" 
+     .Xcenter "0" 
+     .Ycenter "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ rename block: component1:solid1 to: component1:groundcut
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Solid.Rename "component1:solid1", "groundcut"
+
+'@ boolean subtract shapes: component1:ground_plane, component1:groundcut
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Solid.Subtract "component1:ground_plane", "component1:groundcut"
+
+'@ pick face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Pick.PickFaceFromId "component1:circular_patch", "3"
+
+'@ align wcs with face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.AlignWCSWithSelected "Face"
 
 '@ move wcs
 
 '[VERSION]2019.0|28.0.2|20180920[/VERSION]
-WCS.MoveWCS "local", "Xf", "0.0", "0.0" 
+WCS.MoveWCS "local", "Xf", "0.0", "0.0"
+
+'@ rotate wcs
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.RotateWCS "w", "180"
+
+'@ rotate wcs
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.RotateWCS "w", "0"
+
+'@ rotate wcs
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.RotateWCS "w", "0"
+
+'@ pick face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Pick.PickFaceFromId "component1:circular_patch", "3"
+
+'@ align wcs with face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.AlignWCSWithSelected "Face"
+
+'@ move wcs
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+WCS.MoveWCS "local", "-Xf", "0.0", "0.0"
+
+'@ define cylinder: component1:pin
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "pin" 
+     .Component "component1" 
+     .Material "PEC" 
+     .OuterRadius "pin_radius" 
+     .InnerRadius "0.0" 
+     .Axis "z" 
+     .Zrange "0.0001", "-pin_length" 
+     .Xcenter "0" 
+     .Ycenter "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define cylinder: component1:Via
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "Via" 
+     .Component "component1" 
+     .Material "PEC" 
+     .OuterRadius "0.265" 
+     .InnerRadius "0.0" 
+     .Axis "z" 
+     .Zrange "0", "-pin_length" 
+     .Xcenter "0" 
+     .Ycenter "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define cylinder: component1:coax
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "coax" 
+     .Component "component1" 
+     .Material "PEC" 
+     .OuterRadius "total_cut_radius" 
+     .InnerRadius "pin_radius" 
+     .Axis "z" 
+     .Zrange "-Tc-Tc-Hs", "-pin_length" 
+     .Xcenter "0" 
+     .Ycenter "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define material: PTFE (lossy)
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Material
+     .Reset
+     .Name "PTFE (lossy)"
+     .Folder ""
+.FrqType "all"
+.Type "Normal"
+.SetMaterialUnit "GHz", "mm"
+.Epsilon "2.1"
+.Mu "1.0"
+.Kappa "0.0"
+.TanD "0.0002"
+.TanDFreq "10.0"
+.TanDGiven "True"
+.TanDModel "ConstTanD"
+.KappaM "0.0"
+.TanDM "0.0"
+.TanDMFreq "0.0"
+.TanDMGiven "False"
+.TanDMModel "ConstKappa"
+.DispModelEps "None"
+.DispModelMu "None"
+.DispersiveFittingSchemeEps "General 1st"
+.DispersiveFittingSchemeMu "General 1st"
+.UseGeneralDispersionEps "False"
+.UseGeneralDispersionMu "False"
+.Rho "2200.0"
+.ThermalType "Normal"
+.ThermalConductivity "0.2"
+.HeatCapacity "1.0"
+.SetActiveMaterial "all"
+.MechanicsType "Isotropic"
+.YoungsModulus "0.5"
+.PoissonsRatio "0.4"
+.ThermalExpansionRate "140"
+.Colour "0.94", "0.82", "0.76"
+.Wireframe "False"
+.Transparency "0"
+.Create
+End With
+
+'@ change material and color: component1:coax to: PTFE (lossy)
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Solid.SetUseIndividualColor "component1:coax", 1
+Solid.ChangeIndividualColor "component1:coax", "128", "128", "128"
+
+'@ pick face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Pick.PickFaceFromId "component1:coax", "2"
+
+'@ define extrude: component1:outer_coating
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Extrude 
+     .Reset 
+     .Name "outer_coating" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Mode "Picks" 
+     .Height "0.0" 
+     .Twist "0.0" 
+     .Taper "0.0" 
+     .UsePicksForHeight "False" 
+     .DeleteBaseFaceSolid "False" 
+     .ClearPickedFace "True" 
+     .Create 
+End With 
+
+'@ delete shape: component1:outer_coating
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Solid.Delete "component1:outer_coating" 
+
+
+'@ pick face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Pick.PickFaceFromId "component1:coax", "2" 
+
+
+'@ define extrude: component1:outer_coating
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Extrude 
+     .Reset 
+     .Name "outer_coating" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Mode "Picks" 
+     .Height "0.0" 
+     .Twist "0.0" 
+     .Taper "0.0" 
+     .UsePicksForHeight "False" 
+     .DeleteBaseFaceSolid "False" 
+     .ClearPickedFace "True" 
+     .Create 
+End With 
+
+
+'@ pick face
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Pick.PickFaceFromId "component1:fr4_substrate", "2" 
+
+
+'@ define extrude: component1:solid1
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Extrude 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Mode "Picks" 
+     .Height "Tc" 
+     .Twist "0.0" 
+     .Taper "0.0" 
+     .UsePicksForHeight "False" 
+     .DeleteBaseFaceSolid "False" 
+     .ClearPickedFace "True" 
+     .Create 
+End With 
+
+
+'@ rename block: component1:solid1 to: component1:side_cover
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+Solid.Rename "component1:solid1", "side_cover"
+
+
+'@ define autointersection settings
+
+'[VERSION]2019.0|28.0.2|20180920[/VERSION]
+With Solid
+     .SetAutoIntersectionCheckElMag "True" 
+     .SetAutoIntersectionCheckThermal "False" 
+     .SetAutoIntersectionCheckMechanics "False" 
+End With
 
 
